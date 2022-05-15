@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -91,7 +91,7 @@ img {
 
 input,
 button {
-  font-family: var(--body-font);
+  font-family: inherit;
   outline: none;
   border: none;
 }
@@ -144,6 +144,40 @@ button {
 
 /*=============== HEADER & NAV ===============*/
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: var(--z-index);
+  transition: .4s;
+}
+
+.nav {
+  height: var(--header-height);
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: var(--font-medium);
+  transition: .3s;
+  color: #fff;
+}
+
+.nav__logo i {
+  font-size: 1rem;
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
 
 /* Change background header */
 
